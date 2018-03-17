@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Flow Mapper</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Hind:300,400,500|Fira+Sans:400,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/main-975d2b0465.css"/>
+
+    <!--[if IE]>
+    <script>
+        window.location.href = '../browser.html';
+    </script>
+    <![endif]-->
+</head>
+<body>
+<div class="page-loader" id="page-loader">
+    <div class="loading-wrapper">
+        <!--<div class="spinner"></div>-->
+        <div class="loader">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="24px" height="30px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <rect x="0" y="13" width="4" height="5" fill="#333">
+                    <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0s" dur="0.6s" repeatCount="indefinite" />
+                    <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0s" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+                <rect x="10" y="13" width="4" height="5" fill="#333">
+                    <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+                    <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+                <rect x="20" y="13" width="4" height="5" fill="#333">
+                    <animate attributeName="height" attributeType="XML" values="5;21;5" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+                    <animate attributeName="y" attributeType="XML" values="13; 5; 13" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+                </rect>
+            </svg>
+        </div>
+    </div>
+</div>
+<div class="page-wrapper">
+    <header class="header is-opacity is-top" id="header"></header>
+    <div class="project-intro">
+        <div class="container">
+            <div class="project-section project-title">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>Food Flow Mapper</h1>
+                        <h2>Network Visualization</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="project-section-cnt">
+                            <p>Food is highly related to everyone. This visualization is designed to help explore the food flow within the USA. The potential users are farmers, citizens and food managers or officers.</p>
+                            <p>I designed the project and participated in the front-end development.</p>
+                            <p>See it Online: <a href="http://bit.ly/foodVis" target="_blank">http://bit.ly/foodVis <em class="icon-right"></em></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="project-image">
+                            <img src="../assets/img/works/foodvis/overview.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="section-title">Design Process</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="project-section-cnt">
+                            <img src="../assets/img/works/foodvis/design_process.png" width="100%"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="section-title">Dataset</h3>
+                        <div class="project-section-cnt">
+                            <p>The data comes from the <a class="text-link" href="https://www.census.gov/econ/cfs/" target="_blank">Commodity Flow Survey</a>, which is done through a partnership between the Census Bureau and the Bureau of Transportation Statistics (BTS). The survey is administered every five years, which are 1997, 2002, 2007 and 2012.</p>
+                            <p>The data provides the following information:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="../assets/img/works/foodvis/dataset.png" width="100%" />
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4 class="section-title">Potential Questions</h4>
+                        <div class="project-section-cnt">
+                            <p>What would the farmers, citizens and food managers want to know about the data?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <img src="../assets/img/works/foodvis/questions.png" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-title">Finding a Visual Language</div>
+                        <div class="section-subtitle">First-stage Research</div>
+                        <div class="project-section-cnt">
+                            <p>The next step for me was to work on the visual output.</p>
+                            <p>Two main aspects of the data set should be presented. First of all, every states and their data and secondly the connections between them resulting in a “network”. Therefore, I started with a research to find already existing visualization projects which are either geo-based or network visualizations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="project-image">
+                            <img src="../assets/img/works/foodvis/inspirations.png" width="100%">
+                            <p class="caption">A good tool to keep an overview of the visual research is Pinterest. The New York Times also offers great visualizations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="section-subtitle">Visualization Attempts</div>
+                        <div class="project-section-cnt">
+                            <p>Several attempts were made to visualize both the geographic information and "networking" between states. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="attempt-list">
+                            <div><img src="../assets/img/works/foodvis/attempt_1.png" width="100%"/></div>
+                            <div><img src="../assets/img/works/foodvis/attempt_2.png" width="100%"/></div>
+                            <div><img src="../assets/img/works/foodvis/attempt_3.png" width="100%"/></div>
+                            <div><img src="../assets/img/works/foodvis/attempt_4.png" width="100%"/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="section-title">Design Challenges & Solutions</h3>
+                        <h3 class="section-subtitle">Representation for 10 Food Categories</h3>
+                        <div class="project-section-cnt">
+                            <p>Several attempts have been done to choose a right color palette for the representation of 10 categories.</p>
+                            <p>First, I attempted to <strong>group categories.</strong> The problem is there is <strong>no scientific classification</strong> could be applied on the foundation of current food categories.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="../assets/img/works/foodvis/food_categories.png" width="100%">
+                        <div class="caption">
+                            Current 10 Food Categories
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="project-section-cnt">
+                            <div class="project-section-cnt">
+                                <p>My second attempt is to use the <a class="text-link" href="http://colorbrewer2.org/" target="_blank">Color Brewer</a>, which offers pre-made color schemes to use based in cartography. However, the colors are too common. The color scale should show a customized aesthetic to be recognizable.</p>
+                                <p>Thus, I decided to customize the color palette. Three important considerations that I adhere to are:</p>
+                                <ul>
+                                    <li>
+                                        <span class="icon-circle-thin"></span> Use qualitative color schemes to highlight qualitative categories.
+                                    </li>
+                                    <li>
+                                        <span class="icon-circle-thin"></span> Have a wide range in both hue and brightness to increase accessibility for color blindness.
+                                    </li>
+                                    <li>
+                                        <span class="icon-circle-thin"></span> Use a gradient instead of choosing a static set of colors to feel natural.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="../assets/img/works/foodvis/challenge_1.png" width="100%">
+                        <div class="caption">
+                            Chroma.js is used to get a set of colors with linear lightness curve, improving the differentiability of the resulting colors.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <img src="../assets/img/works/foodvis/color_blindness.png" width="100%">
+                        <div class="caption">
+                            It's important to respect color blindness.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="section-subtitle">Representation for Flow within States</h3>
+                        <div class="project-section-cnt">
+                            <p>Arc Diagram does well in visualizing flows among different states, but how to represent flow within the same state?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <img src="../assets/img/works/foodvis/challenge_2.png" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="section-subtitle">Representation for Long Data Label</h3>
+                        <div class="project-section-cnt">
+                            <p>How to show long data label in limited space is also a challenge in common data visualization.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <img src="../assets/img/works/foodvis/challenge_3.png" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="section-title">Design Details</h3>
+                        <h4 class="section-subtitle">Default View</h4>
+                        <div class="project-section-cnt">
+                            <p>Default screen shows the overview of food flow in U.S.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="project-section-cnt">
+                            <div class="annotation">
+                                <img src="../assets/img/works/foodvis/screen_1.png" width="100%"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4 class="section-subtitle">One State Highlighted</h4>
+                        <div class="project-section-cnt">
+                            <p>This screen shows the relationship between Georgia and other states. When clicking any state, that state would be highlighted.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="project-section-cnt">
+                            <div class="annotation">
+                                <img src="../assets/img/works/foodvis/screen_2.png" width="100%"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h4 class="section-subtitle">Color by Food Types</h4>
+                        <div class="project-section-cnt">
+                            <p>Users can also color-code the arc diagram by food types and transportation modes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="project-section-cnt">
+                            <div class="annotation">
+                                <img src="../assets/img/works/foodvis/screen_3.png" width="100%"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-section">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="section-title">Video</h3>
+                        <div class="project-section-cnt">
+                            <p>Explore it Online: <a href="http://bit.ly/foodVis" target="_blank">http://bit.ly/foodVis <em class="icon-right"></em></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <iframe width="100%" class="video-frame" src="https://www.youtube.com/embed/MGUGN3SeVVU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end container -->
+    </div> <!-- end project intro -->
+    <div class="other-works" id="other-works"></div>
+    <footer class="footer" id="footer"></footer>
+</div>
+
+<script src="../assets/js/plugins-71ee506123.js"></script>
+<script src="../assets/js/main-11921cab7f.js"></script>
+
+<script type="text/javascript">
+    var $video = $('.video-frame');
+    var width = $video.width();
+    var height = width / 1920 * 1080;
+
+    $video.height(height);
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-68427087-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
